@@ -1,0 +1,7 @@
+{
+  "wallets": [
+    {"address": "REPLACE_WITH_WALLET_1", "label": "wallet performant #1", "weight": 1.5},
+    {"address": "REPLACE_WITH_WALLET_2", "label": "wallet performant #2", "weight": 1.0}
+  ],
+  "early_buy_window_minutes": 15
+}

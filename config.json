@@ -1,0 +1,56 @@
+{
+  "scan_interval_seconds": 30,
+  "alert_cooldown_seconds": 300,
+  "rescan_score_delta_for_new_alert": 8,
+  "min_liquidity_usd": 5000,
+  "min_total_score": 65,
+  "score_weights": {
+    "price_momentum": 20,
+    "volume": 20,
+    "buyers_sellers": 15,
+    "holder_growth": 10,
+    "liquidity": 10,
+    "wallet_activity": 10,
+    "social_momentum": 15
+  },
+  "alert_thresholds": {
+    "watch": 65,
+    "potential": 75,
+    "strong": 85
+  },
+  "risk_flags": {
+    "low_liquidity_usd": 3000,
+    "high_holder_concentration_pct": 80,
+    "very_new_token_minutes": 2,
+    "suspicious_volume_ratio": 10
+  },
+  "social": {
+    "accounts_file": "tracked_accounts.json",
+    "mention_window_minutes": 60,
+    "min_mentions_for_signal": 3,
+    "x_search_limit": 30
+  },
+  "backtest": {
+    "targets": [2, 3, 5, 10],
+    "tracking_duration_hours": 24,
+    "snapshot_interval_seconds": 60
+  },
+  "wallet_tracking": {
+    "enabled": false,
+    "accounts_file": "tracked_wallets.json"
+  },
+  "pattern_compare": {
+    "enabled": true,
+    "min_multiple": 3.0,
+    "min_historical_samples": 10
+  },
+  "ml": {
+    "enabled": false,
+    "model_path": "ml/model.json"
+  },
+  "dashboard": {
+    "enabled": false,
+    "host": "127.0.0.1",
+    "port": 8080
+  }
+}

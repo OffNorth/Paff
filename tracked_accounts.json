@@ -1,0 +1,9 @@
+{
+  "accounts": [
+    {"handle": "example_account_1", "weight": 1.5},
+    {"handle": "example_account_2", "weight": 1.0},
+    {"handle": "example_account_3", "weight": 0.5}
+  ],
+  "keywords": ["solana", "memecoin", "pumpfun"],
+  "min_followers": 1000
+}
